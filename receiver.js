@@ -1,9 +1,8 @@
 /* global angular */
 angular.module('myapp', ['ng-chrome-cast-channels'])
-  .controller('myctrl', ['$scope', '$sce', 'ChromeCastReceiverChannel', function ($scope, ChromeCastReceiverChannel, $sce) {
+  .controller('myctrl', ['$scope', 'ChromeCastReceiverChannel', function ($scope, ChromeCastReceiverChannel) {
     $scope.callback = function (data) {
       $scope.data = data
-      $scope.frameUrl = $sce.trustAsResourceUrl(data)
       $scope.$apply()
     }
 
