@@ -12,6 +12,7 @@
       height: 720PX;
       width: 1280PX;
       border: 0px solid silver;
+      overflow:hidden;
     }
     .message {
       display: block;
@@ -23,14 +24,7 @@
   <title>Cast Hello Text</title>
 </head>
 <body ng-app="myapp">
-  <iframe src="http://www.w3schools.com/"></iframe>
-  <div class="message">
-    <h3>{{data}}</h3>
-  </div>
-  <!-- <DIV ng-controller='myctrl' id="message">
-    <h1>This is Chromecast</h1>
-    <h1>{{data}}</h1>
-  </DIV> -->
+  <iframe src="http://www.w3schools.com/" scrolling="no"></iframe>
 <script type="text/javascript" src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.js"></script>
 <script src="ng-chrome-cast-channels.js"></script>
