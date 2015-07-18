@@ -4,29 +4,33 @@
   <style type="text/css">
     body {
       overflow: hidden;
-    }
-    div {
-      height: 720PX;
-      width: 1280PX;
-      text-align: center;
-      border: 0px solid silver;
-      display: table-cell;
-      vertical-align: middle;
-      color: #FFFFFF;
-      background-color: #FAA;
       font-weight: bold;
       font-family: Verdana, Geneva, sans-serif;
       font-size: 40px;
+    }
+    iframe {
+      height: 720PX;
+      width: 1280PX;
+      border: 0px solid silver;
+    }
+    .message {
+      display: block;
+      position: fixed;
+      right: 0px;
+      top: 0px;
     }
   </style>
   <title>Cast Hello Text</title>
 </head>
 <body ng-app="myapp">
-  <DIV ng-controller='myctrl' id="message">
+  <iframe src="http://www.w3schools.com/"></iframe>
+  <div class="message">
+    <h3>hello</h3>
+  </div>
+  <!-- <DIV ng-controller='myctrl' id="message">
     <h1>This is Chromecast</h1>
     <h1>{{data}}</h1>
-    <iframe src="http://www.w3schools.com/"></iframe>
-  </DIV>
+  </DIV> -->
 <script type="text/javascript" src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.js"></script>
 <script src="ng-chrome-cast-channels.js"></script>
